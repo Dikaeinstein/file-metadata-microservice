@@ -1,0 +1,23 @@
+{
+  "name": "file-metadata-microservice",
+  "version": "1.0.0",
+  "description": "File metadata microservice",
+  "main": "index.js",
+  "author": "Dikaeinstein",
+  "license": "MIT",
+  "scripts": {
+    "start": "node dist/server.js",
+    "prestart": "babel src -d dist",
+    "dev": "nodemon --exec babel-node src/server.js"
+  },
+  "dependencies": {
+    "dotenv": "^5.0.1",
+    "express": "^4.16.2",
+    "morgan": "^1.9.0",
+    "multer": "^1.3.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}
